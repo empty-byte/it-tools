@@ -39,12 +39,12 @@ const tools = computed<ToolCategory[]>(() => [
         <HeroGradient class="gradient" />
         <div class="text-wrapper">
           <div class="title">
-            IT - TOOLS
+           IT开发工具
           </div>
           <div class="divider" />
-          <div class="subtitle">
+          <!-- <div class="subtitle">
             {{ $t('home.subtitle') }}
-          </div>
+          </div> -->
         </div>
       </RouterLink>
 
@@ -59,14 +59,8 @@ const tools = computed<ToolCategory[]>(() => [
 
         <CollapsibleToolMenu :tools-by-category="tools" />
 
-        <div class="footer">
+        <!-- <div class="footer">
           <div>
-            IT-Tools
-
-            <c-link target="_blank" rel="noopener" :href="`https://github.com/CorentinTh/it-tools/tree/v${version}`">
-              v{{ version }}
-            </c-link>
-
             <template v-if="commitSha && commitSha.length > 0">
               -
               <c-link
@@ -80,12 +74,14 @@ const tools = computed<ToolCategory[]>(() => [
             </template>
           </div>
           <div>
-            © {{ new Date().getFullYear() }}
-            <c-link target="_blank" rel="noopener" href="https://corentin.tech?utm_source=it-tools&utm_medium=footer">
-              Corentin Thomasset
-            </c-link>
+            <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer noopener" style="color:#18a058">皖ICP备2023025098号-1</a>
+            <p><img decoding="async" width="18" height="20" style="width: 18px;" src="/beian.png"> <a href="https://beian.mps.gov.cn/#/query/webSearch?code=34010402704058" target="_blank" style="color:#18a058" rel="noreferrer noopener">皖公网安备34010402704058号</a></p>
+            
+            <p>© {{ new Date().getFullYear() }} 风和日丽的下午</p>
+            <p>联系我：<a href="javascript:void(0);" style="color:#18a058">ccckv@163.com</a></p>
+            
           </div>
-        </div>
+        </div> -->
       </div>
     </template>
 
@@ -120,7 +116,7 @@ const tools = computed<ToolCategory[]>(() => [
           <NavbarButtons v-if="!styleStore.isSmallScreen" />
         </div>
 
-        <c-tooltip position="bottom" :tooltip="$t('home.support')">
+        <!-- <c-tooltip position="bottom" :tooltip="$t('home.support')">
           <c-button
             round
             href="https://www.buymeacoffee.com/cthmsst"
@@ -133,14 +129,31 @@ const tools = computed<ToolCategory[]>(() => [
             {{ $t('home.buyMeACoffee') }}
             <NIcon v-if="!styleStore.isSmallScreen" :component="Heart" ml-2 />
           </c-button>
-        </c-tooltip>
+        </c-tooltip> -->
       </div>
       <slot />
+      <div>
+        <div class="container-footer">
+          <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer noopener" style="color:#18a058">皖ICP备2023025098号-1</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <div><img decoding="async" style="width: 15px;height: 15px;" src="/beian.png"> <a href="https://beian.mps.gov.cn/#/query/webSearch?code=34010402704058" target="_blank" style="color:#18a058" rel="noreferrer noopener">皖公网安备34010402704058号</a></div>&nbsp;&nbsp;&nbsp;&nbsp;
+          <div>© {{ new Date().getFullYear() }} 风和日丽的下午</div>&nbsp;&nbsp;&nbsp;&nbsp;
+          <div>联系我：<a href="javascript:void(0);" style="color:#18a058">ccckv@163.com</a></div>
+        </div>
+      </div>
     </template>
   </MenuLayout>
 </template>
 
 <style lang="less" scoped>
+
+.container-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  font-size: 12px;
+}
+
 // ::v-deep(.n-layout-scroll-container) {
 //     @percent: 4%;
 //     @position: 25px;

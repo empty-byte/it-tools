@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const { availableLocales, locale } = useI18n();
 
+locale.value = 'zh'; // 默认语言设置为中文
 const localesLong: Record<string, string> = {
   en: 'English',
   de: 'Deutsch',
