@@ -42,9 +42,9 @@ const tools = computed<ToolCategory[]>(() => [
            IT工具
           </div>
           <div class="divider" />
-          <!-- <div class="subtitle">
-            {{ $t('home.subtitle') }}
-          </div> -->
+          <div class="subtitle">
+            开发人员使用的在线工具
+          </div>
         </div>
       </RouterLink>
 
