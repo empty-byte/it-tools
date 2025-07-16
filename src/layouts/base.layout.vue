@@ -39,7 +39,7 @@ const tools = computed<ToolCategory[]>(() => [
         <HeroGradient class="gradient" />
         <div class="text-wrapper">
           <div class="title">
-           T工具
+           IT工具
           </div>
           <div class="divider" />
           <!-- <div class="subtitle">
@@ -59,7 +59,7 @@ const tools = computed<ToolCategory[]>(() => [
 
         <CollapsibleToolMenu :tools-by-category="tools" />
 
-        <!-- <div class="footer">
+        <div class="footer">
           <div>
             <template v-if="commitSha && commitSha.length > 0">
               -
@@ -73,15 +73,13 @@ const tools = computed<ToolCategory[]>(() => [
               </c-link>
             </template>
           </div>
-          <div>
-            <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer noopener" style="color:#18a058">皖ICP备2023025098号-1</a>
-            <p><img decoding="async" width="18" height="20" style="width: 18px;" src="/beian.png"> <a href="https://beian.mps.gov.cn/#/query/webSearch?code=34010402704058" target="_blank" style="color:#18a058" rel="noreferrer noopener">皖公网安备34010402704058号</a></p>
-            
-            <p>© {{ new Date().getFullYear() }} 风和日丽的下午</p>
-            <p>联系我：<a href="javascript:void(0);" style="color:#18a058">ccckv@163.com</a></p>
-            
+          <div style="font-size: 12px;display: flex; flex-direction: column;align-items: center">
+            <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer noopener" style="color:#18a058;margin-bottom: 3px;">皖ICP备2023025098号-1</a>
+            <div style="margin-bottom: 3px;"><img decoding="async" style="width: 18px;height: 18px;" src="/beian.png"> <a href="https://beian.mps.gov.cn/#/query/webSearch?code=34010402704058" target="_blank" style="color:#18a058" rel="noreferrer noopener">皖公网安备34010402704058号</a></div>
+            <div style="margin-bottom: 3px;">© {{ new Date().getFullYear() }} 风和日丽的下午</div>
+            <div>联系我：<a href="javascript:void(0);" style="color:#18a058">ccckv@163.com</a></div>
           </div>
-        </div> -->
+        </div>
       </div>
     </template>
 
@@ -132,14 +130,14 @@ const tools = computed<ToolCategory[]>(() => [
         </c-tooltip> -->
       </div>
       <slot />
-      <div>
+      <!-- <div>
         <div class="container-footer">
           <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer noopener" style="color:#18a058">皖ICP备2023025098号-1</a>&nbsp;&nbsp;&nbsp;&nbsp;
           <div><img decoding="async" style="width: 15px;height: 15px;" src="/beian.png"> <a href="https://beian.mps.gov.cn/#/query/webSearch?code=34010402704058" target="_blank" style="color:#18a058" rel="noreferrer noopener">皖公网安备34010402704058号</a></div>&nbsp;&nbsp;&nbsp;&nbsp;
           <div>© {{ new Date().getFullYear() }} 风和日丽的下午</div>&nbsp;&nbsp;&nbsp;&nbsp;
           <div>联系我：<a href="javascript:void(0);" style="color:#18a058">ccckv@163.com</a></div>
         </div>
-      </div>
+      </div> -->
     </template>
   </MenuLayout>
 </template>
