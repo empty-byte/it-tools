@@ -1,0 +1,1 @@
+import{d as a,u as n,o as e,c,_ as m}from"./index-fc85da63.js";const u=a({__name:"About",setup(s){return n({title:"About - IT 工具"}),(o,_)=>{const t=m;return e(),c(t,{markdown:o.$t("about.content"),"mx-auto":"","mt-50px":"","max-w-600px":""},null,8,["markdown"])}}});export{u as default};
