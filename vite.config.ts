@@ -57,8 +57,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       strategies: 'generateSW',
       manifest: {
-        name: 'IT 工具',
-        description: 'Aggregated set of useful tools for developers.',
+        name: 'IT 工具箱',
+        description: '为开发人员提供的一组有用的工具。',
         display: 'standalone',
         lang: 'fr-FR',
         start_url: `${baseUrl}?utm_source=pwa&utm_medium=pwa`,

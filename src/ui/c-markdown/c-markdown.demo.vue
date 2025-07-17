@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const md = `
-# IT 工具
+# IT 工具箱
 
 ## About
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis
